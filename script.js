@@ -11,7 +11,12 @@ function palindromeCheck(string){
     
     console.log(wordCopy);
 
-    if 
+    if (userInputWord === wordCopy){
+        console.log("The word is a palindrome!");
+    } else{
+        console.log("The word is not a palidrome!");
+    }
 }
 
+palindromeCheck(userInputWord);
 
