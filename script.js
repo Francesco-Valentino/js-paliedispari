@@ -1,4 +1,4 @@
-/* const userInputWord = prompt("Type your word here!");
+const userInputWord = prompt("Type your word here!");
 
 let wordCopy = "";
 
@@ -19,7 +19,7 @@ function palindromeCheck(string){
 }
 
 palindromeCheck(userInputWord);
- */
+ 
 
 const userInputNumber = parseInt(prompt("Type your number here."));
 
