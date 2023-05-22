@@ -54,13 +54,13 @@ function checkWinner(sum){
     }
 
     if (evenCheck && userInputGuess == "even"){
-        console.log("You win!")
+        console.log("You win!");
     } else if (evenCheck && userInputGuess == "odd"){
-        console.log("You lose.")
+        console.log("You lose.");
     } else if (!evenCheck && userInputGuess == "odd"){
-        console.log("You win!")
+        console.log("You win!");
     } else{
-        console.log("You lose.")
+        console.log("You lose.");
     }
 }
 
