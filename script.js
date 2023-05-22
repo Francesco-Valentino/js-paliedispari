@@ -23,7 +23,7 @@ palindromeCheck(userInputWord);
 
 const userInputNumber = parseInt(prompt("Type your number here."));
 
-
+const userInputGuess = prompt("Type 'odd' or 'even'.")
 
 let generatedNumber;
 
@@ -37,21 +37,33 @@ generatedNumber = generateRandomNumber();
 
 let sumOfNumbers = generatedNumber + userInputNumber;
 
-console.log(generatedNumber);
+console.log("You typed " + userInputNumber);
 
-console.log(sumOfNumbers);
+console.log("I generated " + generatedNumber);
+
+console.log("The sum is " + sumOfNumbers);
 
 let evenCheck = false;
 
-function checkOddEven(sum){
+function checkWinner(sum){
     if (sum % 2 === 0){
         evenCheck = true;
         console.log("The sum of our numbers is even.");
     } else{
         console.log("The sum of our numbers is odd.");
     }
+
+    if (evenCheck && userInputGuess == "even"){
+        console.log("You win!")
+    } else if (evenCheck && userInputGuess == "odd"){
+        console.log("You lose.")
+    } else if (!evenCheck && userInputGuess == "odd"){
+        console.log("You win!")
+    } else{
+        console.log("You lose.")
+    }
 }
 
-checkOddEven(sumOfNumbers);
+checkWinner(sumOfNumbers);
 
 
